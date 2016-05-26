@@ -1,0 +1,37 @@
+{
+  "name": "vbp-phantomjs-wrapper",
+  "version": "1.0.0",
+  "description": "This library is a wrapper which provides functionalities to queue different phantomjs page request, calls external scripts provided for handling test cases, screenshots of the webpage, scrap cloudflare protected pages as well.",
+  "main": "vbphantom.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tashbalrai/vbp-phantomjs-wrapper.git"
+  },
+  "keywords": [
+    "phantomjs",
+    "cloudflare",
+    "scrapping",
+    "website",
+    "scrapping",
+    "webpage",
+    "screenshots",
+    "custom",
+    "test",
+    "cases",
+    "phantomjs",
+    "wrapper",
+    "library"
+  ],
+  "author": "Balrai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tashbalrai/vbp-phantomjs-wrapper/issues"
+  },
+  "homepage": "https://github.com/tashbalrai/vbp-phantomjs-wrapper#readme",
+  "dependencies": {
+    "phantomjs": "^2.1.7"
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "cfTimeout": 0,
+    "url": "http://phantomjs.org/",
+    "scripts": ["https://code.jquery.com/jquery-2.2.4.min.js"],
+    "settings": {}
+  }
+]
