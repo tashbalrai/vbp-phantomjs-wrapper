@@ -19,10 +19,20 @@ An example input.json file.
 ```json
 [
   {
-    "cfTimeout": 0, //cfTimeout specifies number seconds to wait for process to complete. CF normally takes 5s test in CF case you should set it to 6 to carry out the CF challenge.
-    "url": "http://phantomjs.org/", // URL to scrap. Include the get parameters here for GET requests after ? symbol
-    "scripts": ["https://code.jquery.com/jquery-2.2.4.min.js"], //list of scripts you want to include before runing tests against the page.
-    "settings": {} // refer phantomjs page.open(url, settings,callback);
+    "cfTimeout": 0, 
+    "url": "http://phantomjs.org/",
+    "scripts": ["https://code.jquery.com/jquery-2.2.4.min.js"],
+    "settings": {}
   }
 ]
 ```
+
+Parameters Explanation
+cfTimeout: cfTimeout specifies number seconds to wait for process to complete. CF normally takes 5s test in CF case you should set it to 6 to carry out the CF challenge.
+
+url: URL to scrap. Include the get parameters here for GET requests after ? symbol
+
+scripts: list of scripts you want to include before runing tests against the page.
+
+settings: // refer phantomjs page.open(url, settings,callback);
+
