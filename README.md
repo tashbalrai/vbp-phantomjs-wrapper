@@ -57,3 +57,35 @@ Where to store the web page image
 
 #####setJsPath(string)
 Where are your main.js scripts located that vbphantom will execute after loading the web page. This would be the entry point for your further processing on the loading web page. vbphantom will call the "execute" method of your provide main.js script.
+
+###main.js - Your custom script
+vbphantom allow you to execute different javascripts on the loaded page. After loading each url specified in the input.json file, the main.js file will be loaded and the execute method of the this script will be called. This script must have the following two methods.
+
+#####execute
+method to call after loading the web page.
+
+#####exit
+A method containing window.close() function to signal the end of your custom processing. If you do not provide this function vbphantom will hang up and will not process next requests.
+
+####main.js example
+
+```javascript
+var main = {
+  execute: function () {
+    if(typeof jQuery === 'function') {
+      jQuery(function () {
+        console.log('Page is ready for test cases.');
+        main.exit();
+      })
+    } else {
+      console.log('jQuery not found.');
+      main.exit();
+    }
+  },
+  exit: function () {
+    setTimeout(function(){
+      window.close();
+    }, 5000);
+  }
+};
+```
