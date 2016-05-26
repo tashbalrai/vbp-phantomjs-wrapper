@@ -5,7 +5,7 @@ This library is a wrapper which provides functionalities to queue different phan
 PhantomJS 2.1.1
 
 ### Example
-```
+```javascript
 phantom.injectJs('./vbphantom.js'); // include the vbphantom.js library
 var obj = new VBPhantom(); //create the object
 obj.setScreenShots(true); //set if you want screenshots of the url
@@ -16,7 +16,7 @@ obj.handleRequests(); //Execute the requests.
 ```
 
 An example input.json file.
-```
+```json
 [
   {
     "cfTimeout": 0, //cfTimeout specifies number seconds to wait for process to complete. CF normally takes 5s test in CF case you should set it to 6 to carry out the CF challenge.
