@@ -27,12 +27,13 @@ An example input.json file.
 ]
 ```
 
-Parameters Explanation
-cfTimeout: cfTimeout specifies number seconds to wait for process to complete. CF normally takes 5s test in CF case you should set it to 6 to carry out the CF challenge.
-
-url: URL to scrap. Include the get parameters here for GET requests after ? symbol
-
-scripts: list of scripts you want to include before runing tests against the page.
-
-settings: // refer phantomjs page.open(url, settings,callback);
+####Parameters Explanation
+#####cfTimeout
+cfTimeout specifies number seconds to wait for process to complete. CF normally takes 5s test in CF case you should set it to 6 to carry out the CF challenge.
+#####url
+URL to scrap. Include the get parameters here for GET requests after ? symbol
+#####scripts
+List of scripts you want to include before runing tests against the page.
+#####settings
+Refer phantomjs page.open(url, settings,callback);
 
